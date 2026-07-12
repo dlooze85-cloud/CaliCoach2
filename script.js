@@ -3,7 +3,7 @@ const startButton = document.getElementById("startButton");
 startButton.addEventListener("click", startWorkout);
 
 function startWorkout() {
-
+saveTraining();
     const hero = document.querySelector(".hero");
 
     hero.innerHTML = `
