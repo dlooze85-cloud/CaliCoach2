@@ -1,24 +1,27 @@
-function greeting() {
-
-    const hour = new Date().getHours();
-
-    if (hour < 12)
-        return "Goedemorgen";
-
-    if (hour < 18)
-        return "Goedemiddag";
-
-    return "Goedenavond";
-}
-
-function updateGreeting() {
+document.addEventListener("DOMContentLoaded", () => {
 
     const hello = document.querySelector(".hello");
 
-    if (!hello)
-        return;
+    if (!hello) return;
 
-    hello.innerHTML = greeting() + " 👋";
-}
+    const uur = new Date().getHours();
 
-updateGreeting();
+    let tekst = "";
+
+    if (uur < 12) {
+
+        tekst = "Goedemorgen 👋";
+
+    } else if (uur < 18) {
+
+        tekst = "Goedemiddag 👋";
+
+    } else {
+
+        tekst = "Goedenavond 👋";
+
+    }
+
+    hello.textContent = tekst;
+
+});
