@@ -18,28 +18,32 @@ function showCurrentExercise() {
     const oefening = exercises[currentExercise];
 
     hero.innerHTML = `
+<p class="small">
+Oefening ${currentExercise + 1} van ${exercises.length}
+</p>
 
-        <p class="small">
-        Oefening ${currentExercise + 1} van ${exercises.length}
-        </p>
+<div class="exercise-image">
+${oefening.image}
+</div>
 
-        <h2>${oefening.name}</h2>
+<h2>${oefening.name}</h2>
 
-        <p><strong>Spieren:</strong><br>${oefening.muscle}</p>
+<p class="exercise-description">
+${oefening.description}
+</p>
 
-        <br>
+<div class="muscles">
+💪 ${oefening.muscle}
+</div>
 
-        <p>${oefening.sets} sets × ${oefening.reps}</p>
+<div class="sets">
+${oefening.sets} sets × ${oefening.reps}
+</div>
 
-        <br>
-
-        <button onclick="finishExercise()">
-        Oefening voltooid
-        </button>
-
-    `;
-
-}
+<button onclick="finishExercise()">
+Oefening voltooid
+</button>
+`;
 
 function finishExercise(){
 
