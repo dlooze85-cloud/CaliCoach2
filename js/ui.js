@@ -1,27 +1,22 @@
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const hello = document.querySelector(".hello");
 
-    if (!hello) return;
+    if (hello) {
+        const uur = new Date().getHours();
 
-    const uur = new Date().getHours();
-
-    let tekst = "";
-
-    if (uur < 12) {
-
-        tekst = "Goedemorgen 👋";
-
-    } else if (uur < 18) {
-
-        tekst = "Goedemiddag 👋";
-
-    } else {
-
-        tekst = "Goedenavond 👋";
-
+        if (uur < 12) {
+            hello.textContent = "Goedemorgen 👋";
+        } else if (uur < 18) {
+            hello.textContent = "Goedemiddag 👋";
+        } else {
+            hello.textContent = "Goedenavond 👋";
+        }
     }
 
-    hello.textContent = tekst;
+    if (typeof updateTrainingCounter === "function") {
+        updateTrainingCounter();
+    }
 
 });
