@@ -1,19 +1,26 @@
-const button = document.getElementById("timerButton");
-const timerText = document.getElementById("timer");
+const knop = document.getElementById("timerButton");
+const timer = document.getElementById("timer");
 
-button.addEventListener("click", () => {
-  let seconden = 60;
+knop.addEventListener("click", () => {
 
-  timerText.textContent = `Rust: ${seconden} sec`;
+let seconden = 60;
 
-  const interval = setInterval(() => {
-    seconden--;
+timer.innerHTML = seconden + " sec";
 
-    timerText.textContent = `Rust: ${seconden} sec`;
+const interval = setInterval(function(){
 
-    if (seconden <= 0) {
-      clearInterval(interval);
-      timerText.textContent = "✅ Klaar voor de volgende oefening!";
-    }
-  }, 1000);
+seconden--;
+
+timer.innerHTML = seconden + " sec";
+
+if(seconden<=0){
+
+clearInterval(interval);
+
+timer.innerHTML="✅ Volgende oefening!";
+
+}
+
+},1000);
+
 });
