@@ -1,3 +1,4 @@
+let currentExercise = 0;
 const startButton = document.getElementById("startButton");
 
 startButton.addEventListener("click", startWorkout);
