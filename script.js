@@ -87,3 +87,18 @@ function nextExercise() {
     }, 1000);
 
 }
+function showExercise(index){
+
+const oefening = exercises[index];
+
+alert(
+oefening.name +
+"\n\n" +
+oefening.sets +
+" sets\n" +
+oefening.reps +
+" herhalingen\n\n" +
+oefening.muscle
+);
+
+}
