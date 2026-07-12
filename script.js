@@ -1,5 +1,3 @@
-let currentExercise = 0;
-
 function startWorkout() {
 
     saveTraining();
