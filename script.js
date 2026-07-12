@@ -4,6 +4,7 @@ startButton.addEventListener("click", startWorkout);
 
 function startWorkout() {
 saveTraining();
+updateTrainingCounter();
     const hero = document.querySelector(".hero");
 
     hero.innerHTML = `
