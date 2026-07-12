@@ -23,3 +23,13 @@ function getTrainingen() {
     return Number(trainingen);
 
 }
+function updateTrainingCounter() {
+
+    const teller = document.getElementById("trainingCount");
+
+    if (!teller)
+        return;
+
+    teller.textContent = getTrainingen();
+
+}
