@@ -172,3 +172,27 @@ font-size:24px;
 background:#16233b;
 box-shadow:none;
 }
+.exercise-image{
+font-size:90px;
+text-align:center;
+margin:20px 0;
+}
+
+.exercise-description{
+margin:20px 0;
+line-height:1.6;
+color:#b7c7dd;
+}
+
+.muscles{
+margin:18px 0;
+padding:14px;
+background:#22324d;
+border-radius:14px;
+}
+
+.sets{
+font-size:20px;
+font-weight:600;
+margin:20px 0;
+}
