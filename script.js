@@ -1,104 +1,118 @@
 let currentExercise = 0;
-const startButton = document.getElementById("startButton");
-
-startButton.addEventListener("click", startWorkout);
 
 function startWorkout() {
-saveTraining();
-updateTrainingCounter();
+
+    saveTraining();
+    updateTrainingCounter();
+
+    currentExercise = 0;
+
+    showCurrentExercise();
+
+}
+
+function showCurrentExercise() {
+
     const hero = document.querySelector(".hero");
+
+    const oefening = exercises[currentExercise];
 
     hero.innerHTML = `
 
-        <p class="small">Training gestart</p>
+        <p class="small">
+        Oefening ${currentExercise + 1} van ${exercises.length}
+        </p>
 
-        <h2>🔥 Full Body Beginner</h2>
+        <h2>${oefening.name}</h2>
 
-        <br>
-
-        <h3>Oefening 1 / 8</h3>
-
-        <h2>Push-ups</h2>
-
-        <p>3 sets × 10 herhalingen</p>
+        <p><strong>Spieren:</strong><br>${oefening.muscle}</p>
 
         <br>
 
-        <button id="nextExercise">
-        OEFENING VOLTOOID
+        <p>${oefening.sets} sets × ${oefening.reps}</p>
+
+        <br>
+
+        <button onclick="finishExercise()">
+        Oefening voltooid
         </button>
 
     `;
 
-    document
-        .getElementById("nextExercise")
-        .addEventListener("click", nextExercise);
+}
+
+function finishExercise(){
+
+    currentExercise++;
+
+    if(currentExercise >= exercises.length){
+
+        finishWorkout();
+
+        return;
+
+    }
+
+    startRest();
 
 }
 
-function nextExercise() {
+function startRest(){
 
     const hero = document.querySelector(".hero");
 
-    hero.innerHTML = `
+    let seconden = exercises[currentExercise-1].rest;
 
-        <p class="small">Goed bezig 💪</p>
+    hero.innerHTML=`
 
         <h2>Rust</h2>
 
-        <h1 id="timer">60</h1>
+        <h1 id="timer">${seconden}</h1>
 
-        <p>Volgende oefening start zo...</p>
+        <p>Volgende oefening komt eraan...</p>
 
     `;
 
-    let seconden = 60;
+    const teller=document.getElementById("timer");
 
-    const teller = document.getElementById("timer");
-
-    const interval = setInterval(() => {
+    const interval=setInterval(()=>{
 
         seconden--;
 
-        teller.innerHTML = seconden;
+        teller.textContent=seconden;
 
-        if (seconden <= 0) {
+        if(seconden<=0){
 
             clearInterval(interval);
 
-            hero.innerHTML = `
-
-                <p class="small">Oefening 2 / 8</p>
-
-                <h2>Squats</h2>
-
-                <p>3 sets × 15 herhalingen</p>
-
-                <br>
-
-                <button onclick="location.reload()">
-                Terug naar Home
-                </button>
-
-            `;
+            showCurrentExercise();
 
         }
 
-    }, 1000);
+    },1000);
 
 }
-function showExercise(index){
 
-const oefening = exercises[index];
+function finishWorkout(){
 
-alert(
-oefening.name +
-"\n\n" +
-oefening.sets +
-" sets\n" +
-oefening.reps +
-" herhalingen\n\n" +
-oefening.muscle
-);
+    const hero=document.querySelector(".hero");
+
+    hero.innerHTML=`
+
+        <h2>🎉 Training voltooid!</h2>
+
+        <p>Top gedaan!</p>
+
+        <br>
+
+        <button onclick="location.reload()">
+        Terug naar Home
+        </button>
+
+    `;
 
 }
+
+document
+.getElementById("startButton")
+.addEventListener("click",startWorkout);
