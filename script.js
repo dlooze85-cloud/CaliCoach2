@@ -21,7 +21,9 @@ Oefening ${currentExercise + 1} van ${exercises.length}
 </p>
 
 <div class="exercise-image">
-${oefening.image}
+
+<img src="${oefening.image}" alt="${oefening.name}">
+
 </div>
 
 <h2>${oefening.name}</h2>
