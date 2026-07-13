@@ -16,25 +16,48 @@ function showCurrentExercise() {
     const oefening = exercises[currentExercise];
 
     hero.innerHTML = `
+
 <p class="small">
-Oefening ${currentExercise + 1} van ${exercises.length}
+Oefening ${currentExercise+1} van ${exercises.length}
 </p>
 
 <div class="exercise-image">
-
 <img src="${oefening.image}" alt="${oefening.name}">
-
 </div>
 
 <h2>${oefening.name}</h2>
 
+<div class="info-grid">
+
+<div class="info-card">
+💪
+<h4>Spieren</h4>
+<p>${oefening.muscle}</p>
+</div>
+
+<div class="info-card">
+⭐
+<h4>Niveau</h4>
+<p>${oefening.difficulty}</p>
+</div>
+
+<div class="info-card">
+🔥
+<h4>Calorieën</h4>
+<p>± ${oefening.calories}</p>
+</div>
+
+<div class="info-card">
+⏱
+<h4>Rust</h4>
+<p>${oefening.rest} sec</p>
+</div>
+
+</div>
+
 <p class="exercise-description">
 ${oefening.description}
 </p>
-
-<div class="muscles">
-💪 ${oefening.muscle}
-</div>
 
 <div class="sets">
 ${oefening.sets} sets × ${oefening.reps}
@@ -43,6 +66,7 @@ ${oefening.sets} sets × ${oefening.reps}
 <button onclick="finishExercise()">
 Oefening voltooid
 </button>
+
 `;
 
 function finishExercise(){
