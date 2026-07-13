@@ -2,7 +2,7 @@ const exercises = [
 {
     id:1,
     name:"Push-ups",
-    image:"💪",
+    image:"assets/pushup.svg",
     sets:3,
     reps:"10",
     rest:60,
