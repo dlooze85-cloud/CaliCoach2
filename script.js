@@ -68,7 +68,7 @@ Oefening voltooid
 </button>
 
 `;
-
+}
 function finishExercise(){
 
     currentExercise++;
