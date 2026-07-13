@@ -7,7 +7,10 @@ const exercises = [
     reps:"10",
     rest:60,
     muscle:"Borst • Schouders • Triceps",
-    description:"Houd je lichaam recht en laat je borst gecontroleerd zakken."
+    difficulty:"Beginner",
+    calories:18,
+    description:"Houd je lichaam in een rechte lijn. Laat je borst rustig zakken en duw krachtig omhoog."
+},
 },
 {
     id:2,
