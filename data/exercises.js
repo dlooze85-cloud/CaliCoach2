@@ -16,7 +16,7 @@ const exercises = [
 {
     id: 2,
     name: "Squats",
-    image: "🦵",
+    image: "assets/squat.png",
     sets: 3,
     reps: "15",
     rest: 60,
