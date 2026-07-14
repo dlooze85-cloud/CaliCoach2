@@ -51,3 +51,4 @@ const exercises = [
     calories: 18,
     description: "Breng afwisselend je knieën snel richting je borst."
 }
+];
