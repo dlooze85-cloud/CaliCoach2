@@ -22,7 +22,12 @@ Oefening ${currentExercise+1} van ${exercises.length}
 </p>
 
 <div class="exercise-image">
-<img src="${oefening.image}" alt="${oefening.name}">
+
+<img
+src="${oefening.image}"
+alt="${oefening.name}"
+loading="lazy">
+
 </div>
 
 <h2>${oefening.name}</h2>
@@ -60,7 +65,19 @@ ${oefening.description}
 </p>
 
 <div class="sets">
-${oefening.sets} sets × ${oefening.reps}
+
+🏋️ ${oefening.sets} sets × ${oefening.reps}
+
+</div>
+
+<div class="exercise-stats">
+
+<span>💪 ${oefening.muscle}</span>
+
+<span>⭐ ${oefening.difficulty}</span>
+
+<span>🔥 ± ${oefening.calories} kcal</span>
+
 </div>
 
 <button onclick="finishExercise()">
