@@ -327,3 +327,36 @@ border-radius:14px;
 font-size:14px;
 border:1px solid rgba(255,255,255,.08);
 }
+.workout-card{
+
+background:linear-gradient(135deg,#111827,#1f2937);
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+}
+
+.hero-subtitle{
+
+color:#9ca3af;
+
+margin:12px 0 20px;
+
+font-size:.95rem;
+
+}
+
+.hero-progress{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:18px 0;
+
+font-size:.9rem;
+
+color:#9ca3af;
+
+}
