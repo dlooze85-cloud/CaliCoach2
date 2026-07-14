@@ -24,6 +24,30 @@ const exercises = [
     difficulty: "Beginner",
     calories: 20,
     description: "Zak gecontroleerd totdat je bovenbenen ongeveer parallel aan de vloer zijn. Houd je rug recht."
-}
 
-];
+,
+{
+    id: 3,
+    name: "Plank",
+    image: "🧘",
+    sets: 3,
+    reps: "30 sec",
+    rest: 45,
+    muscle: "Core • Schouders",
+    difficulty: "Beginner",
+    calories: 10,
+    description: "Span je buik en billen aan. Houd je lichaam volledig recht."
+},
+
+{
+    id: 4,
+    name: "Mountain Climbers",
+    image: "🏃",
+    sets: 3,
+    reps: "20",
+    rest: 45,
+    muscle: "Core • Conditie",
+    difficulty: "Beginner",
+    calories: 18,
+    description: "Breng afwisselend je knieën snel richting je borst."
+}
