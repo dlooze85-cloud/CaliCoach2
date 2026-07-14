@@ -179,7 +179,24 @@ justify-content:center;
 margin:20px 0;
 }
 
+.exercise-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:25px 0;
+}
+
 .exercise-image img{
+    width:100%;
+    max-width:340px;
+    border-radius:20px;
+    filter:drop-shadow(0 15px 35px rgba(0,0,0,.45));
+    transition:.3s;
+}
+
+.exercise-image img:hover{
+    transform:scale(1.03);
+}
 
 width:170px;
 
