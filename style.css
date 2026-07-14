@@ -47,11 +47,12 @@ box-shadow:0 10px 30px rgba(37,99,235,.4);
 }
 
 .hero{
-margin-bottom:30px;
-padding:24px;
-border-radius:24px;
-background:linear-gradient(135deg,#16233b,#0f172a);
-box-shadow:0 20px 40px rgba(0,0,0,.35);
+    margin-bottom:30px;
+    padding:32px;
+    border-radius:28px;
+    background:linear-gradient(135deg,#131b27,#0c1118);
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+    border:1px solid rgba(255,255,255,.06);
 }
 
 .small{
