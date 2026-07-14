@@ -24,8 +24,8 @@ const exercises = [
     difficulty: "Beginner",
     calories: 20,
     description: "Zak gecontroleerd totdat je bovenbenen ongeveer parallel aan de vloer zijn. Houd je rug recht."
+},
 
-,
 {
     id: 3,
     name: "Plank",
