@@ -194,7 +194,29 @@ margin:20px 0;
     filter:drop-shadow(0 15px 35px rgba(0,0,0,.45));
     transition:.3s;
 }
+.exercise-image{
+    min-height:260px;
+}
 
+.exercise-image img{
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
 .exercise-image img:hover{
     transform:scale(1.03);
 }
