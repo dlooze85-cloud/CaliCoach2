@@ -110,15 +110,31 @@ function startRest(){
     const hero = document.querySelector(".hero");
 
     let seconden = exercises[currentExercise-1].rest;
+const volgende = getCurrentExercise();
+    
+hero.innerHTML=`
 
-    hero.innerHTML=`
+<h2>⏱ Rust</h2>
 
-        <h2>Rust</h2>
+<h1 id="timer">${seconden}</h1>
 
-        <h1 id="timer">${seconden}</h1>
+<h3>Volgende oefening</h3>
 
-        <p>Volgende oefening komt eraan...</p>
+<div class="exercise-image">
+    <img src="${volgende.image}" alt="${volgende.name}">
+</div>
 
+<h2>${volgende.name}</h2>
+
+<p>🏋️ ${volgende.sets} sets × ${volgende.reps}</p>
+
+<p>💪 ${volgende.muscle}</p>
+
+<br>
+
+<button onclick="skipRest()">
+⏭ Rust overslaan
+</button>
 <br>
 
 <button onclick="skipRest()">
