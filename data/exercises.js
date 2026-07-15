@@ -385,5 +385,5 @@ const exercises = [
     difficulty: "Gemiddeld",
     calories: 14,
     description: "Houd je onderrug tegen de grond terwijl armen en benen van de vloer blijven."
-},
+}
 ];
