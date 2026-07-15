@@ -1,15 +1,16 @@
 let currentExercise = 0;
+let currentWorkout = [];
 
 function getCurrentExercise() {
-    return exercises[currentExercise];
+    return currentWorkout[currentExercise];
 }
 
 function nextExercise() {
 
     currentExercise++;
 
-    if(currentExercise >= exercises.length){
-
+    
+if(currentExercise >= currentWorkout.length){
         finishWorkout();
 
         return;
@@ -23,5 +24,18 @@ function nextExercise() {
 function resetWorkout(){
 
     currentExercise = 0;
+
+}
+function generateWorkout(type){
+
+    if(type==="express"){
+
+        return exercises
+            .sort(()=>Math.random()-0.5)
+            .slice(0,6);
+
+    }
+
+    return exercises;
 
 }
