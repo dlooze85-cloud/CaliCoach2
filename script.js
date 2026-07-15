@@ -116,7 +116,11 @@ hero.innerHTML=`
 
 <h2>⏱ Rust</h2>
 
+<div class="timer-circle">
+
 <h1 id="timer">${seconden}</h1>
+
+</div>
 
 <h3>Volgende oefening</h3>
 
