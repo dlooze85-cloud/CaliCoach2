@@ -160,4 +160,7 @@ function finishWorkout(){
 
 document
 .getElementById("startButton")
-.addEventListener("click",startWorkout);
+.addEventListener("click", () => {
+    alert("Knop werkt!");
+    startWorkout();
+});
