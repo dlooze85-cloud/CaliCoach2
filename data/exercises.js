@@ -76,5 +76,56 @@ const exercises = [
     difficulty: "Beginner",
     calories: 20,
     description: "Stap gecontroleerd naar achteren en duw jezelf terug omhoog."
+},
+{
+    id: 7,
+    name: "Superman",
+    image: "🦸",
+    sets: 3,
+    reps: "15",
+    rest: 45,
+    muscle: "Onderrug • Billen",
+    difficulty: "Beginner",
+    calories: 12,
+    description: "Til tegelijkertijd je armen en benen van de grond en houd dit kort vast."
+},
+
+{
+    id: 8,
+    name: "Bicycle Crunches",
+    image: "🚴",
+    sets: 3,
+    reps: "20",
+    rest: 45,
+    muscle: "Buikspieren",
+    difficulty: "Beginner",
+    calories: 16,
+    description: "Breng afwisselend je elleboog naar de tegenoverliggende knie."
+},
+
+{
+    id: 9,
+    name: "Burpees",
+    image: "🔥",
+    sets: 3,
+    reps: "10",
+    rest: 60,
+    muscle: "Volledig lichaam",
+    difficulty: "Gemiddeld",
+    calories: 30,
+    description: "Zak naar de grond, spring terug en eindig met een krachtige sprong."
+},
+
+{
+    id: 10,
+    name: "Jumping Jacks",
+    image: "🤸",
+    sets: 3,
+    reps: "30",
+    rest: 45,
+    muscle: "Conditie • Schouders • Benen",
+    difficulty: "Beginner",
+    calories: 18,
+    description: "Spring met armen en benen tegelijk naar buiten en weer terug."
 }
 ];
