@@ -1,5 +1,5 @@
 function startWorkout() {
-
+alert("StartWorkout gestart");
     saveTraining();
     updateTrainingCounter();
 
