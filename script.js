@@ -119,6 +119,12 @@ function startRest(){
 
         <p>Volgende oefening komt eraan...</p>
 
+<br>
+
+<button onclick="skipRest()">
+⏭ Rust overslaan
+</button>
+
     `;
 
     const teller=document.getElementById("timer");
@@ -160,7 +166,11 @@ function finishWorkout(){
     `;
 
 }
+function skipRest(){
 
+    showCurrentExercise();
+
+}
 document
 .getElementById("startButton")
 .addEventListener("click", startWorkout);
