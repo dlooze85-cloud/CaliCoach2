@@ -1,5 +1,5 @@
 function startWorkout() {
-alert("StartWorkout gestart");
+
     saveTraining();
     updateTrainingCounter();
 
@@ -162,7 +162,4 @@ function finishWorkout(){
 
 document
 .getElementById("startButton")
-.addEventListener("click", () => {
-    alert("Knop werkt!");
-    startWorkout();
-});
+.addEventListener("click", startWorkout);
