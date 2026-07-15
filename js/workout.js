@@ -28,14 +28,45 @@ function resetWorkout(){
 }
 function generateWorkout(type){
 
-    if(type==="express"){
+    if(type !== "express"){
+        return exercises;
+    }
 
-        return exercises
-            .sort(()=>Math.random()-0.5)
-            .slice(0,6);
+    const workout = [];
+
+    function voegToe(bodypart){
+
+        const opties = exercises.filter(o =>
+            o.bodypart === bodypart &&
+            !workout.includes(o)
+        );
+
+        if(opties.length > 0){
+
+            workout.push(
+                opties[Math.floor(Math.random()*opties.length)]
+            );
+
+        }
 
     }
 
-    return exercises;
+    voegToe("Upper");
+    voegToe("Legs");
+    voegToe("Core");
+    voegToe("Full");
+    voegToe("Posterior");
+
+    const overige = exercises.filter(o => !workout.includes(o));
+
+    if(overige.length > 0){
+
+        workout.push(
+            overige[Math.floor(Math.random()*overige.length)]
+        );
+
+    }
+
+    return workout;
 
 }
