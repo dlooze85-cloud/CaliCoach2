@@ -50,5 +50,30 @@ const exercises = [
     difficulty: "Beginner",
     calories: 18,
     description: "Breng afwisselend je knieën snel richting je borst."
+},
+
+{
+    id: 5,
+    name: "Glute Bridge",
+    image: "🍑",
+    sets: 3,
+    reps: "15",
+    rest: 45,
+    muscle: "Billen • Hamstrings",
+    difficulty: "Beginner",
+    calories: 14,
+    description: "Duw je heupen omhoog en span je billen bovenaan goed aan."
+},
+
+{
+    id: 6,
+    name: "Reverse Lunges",
+    image: "🦿",
+    sets: 3,
+    reps: "12 per been",
+    rest: 60,
+    muscle: "Benen • Billen",
+    difficulty: "Beginner",
+    calories: 20,
+    description: "Stap gecontroleerd naar achteren en duw jezelf terug omhoog."
 }
-];
