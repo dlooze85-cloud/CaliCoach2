@@ -77,3 +77,4 @@ const exercises = [
     calories: 20,
     description: "Stap gecontroleerd naar achteren en duw jezelf terug omhoog."
 }
+];
