@@ -5,9 +5,9 @@ function startWorkout() {
 
     currentExercise = 0;
 
-    alert("Voor showCurrentExercise");
+    
 showCurrentExercise();
-alert("Na showCurrentExercise");
+
 
 }
 
