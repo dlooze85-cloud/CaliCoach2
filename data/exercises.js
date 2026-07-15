@@ -256,5 +256,134 @@ const exercises = [
     difficulty: "Beginner",
     calories: 10,
     description: "Kom op je tenen en laat jezelf langzaam weer zakken."
-}
+},
+{
+    id: 21,
+    name: "Diamond Push-ups",
+    image: "💎",
+    sets: 3,
+    reps: "8",
+    rest: 60,
+    muscle: "Triceps • Borst",
+    difficulty: "Gemiddeld",
+    calories: 18,
+    description: "Plaats je handen dicht bij elkaar in een diamantvorm en duw jezelf omhoog."
+},
+
+{
+    id: 22,
+    name: "Incline Push-ups",
+    image: "📦",
+    sets: 3,
+    reps: "12",
+    rest: 45,
+    muscle: "Borst • Schouders",
+    difficulty: "Beginner",
+    calories: 15,
+    description: "Gebruik een bankje of tafel om de oefening lichter te maken."
+},
+
+{
+    id: 23,
+    name: "Decline Push-ups",
+    image: "⬇️",
+    sets: 3,
+    reps: "10",
+    rest: 60,
+    muscle: "Borst • Schouders",
+    difficulty: "Gemiddeld",
+    calories: 20,
+    description: "Plaats je voeten op een verhoging en voer gecontroleerde push-ups uit."
+},
+
+{
+    id: 24,
+    name: "Walking Lunges",
+    image: "🚶",
+    sets: 3,
+    reps: "12 per been",
+    rest: 60,
+    muscle: "Benen • Billen",
+    difficulty: "Gemiddeld",
+    calories: 22,
+    description: "Maak afwisselend een uitvalspas terwijl je vooruit loopt."
+},
+
+{
+    id: 25,
+    name: "Sumo Squats",
+    image: "🥋",
+    sets: 3,
+    reps: "15",
+    rest: 45,
+    muscle: "Benen • Binnenkant bovenbenen",
+    difficulty: "Beginner",
+    calories: 18,
+    description: "Zet je voeten breed neer en zak diep door je knieën."
+},
+
+{
+    id: 26,
+    name: "Single Leg Glute Bridge",
+    image: "🦵",
+    sets: 3,
+    reps: "12 per been",
+    rest: 45,
+    muscle: "Billen • Hamstrings",
+    difficulty: "Gemiddeld",
+    calories: 16,
+    description: "Voer de glute bridge uit met één been gestrekt."
+},
+
+{
+    id: 27,
+    name: "Russian Twists",
+    image: "🔄",
+    sets: 3,
+    reps: "20",
+    rest: 45,
+    muscle: "Core • Schuine buikspieren",
+    difficulty: "Beginner",
+    calories: 16,
+    description: "Draai gecontroleerd van links naar rechts terwijl je je romp stabiel houdt."
+},
+
+{
+    id: 28,
+    name: "Leg Raises",
+    image: "⬆️",
+    sets: 3,
+    reps: "15",
+    rest: 45,
+    muscle: "Onderste buikspieren",
+    difficulty: "Gemiddeld",
+    calories: 16,
+    description: "Houd je benen gestrekt en laat ze langzaam zakken zonder de vloer te raken."
+},
+
+{
+    id: 29,
+    name: "Flutter Kicks",
+    image: "🦋",
+    sets: 3,
+    reps: "30 sec",
+    rest: 45,
+    muscle: "Core",
+    difficulty: "Beginner",
+    calories: 15,
+    description: "Maak kleine snelle trapbewegingen met gestrekte benen."
+},
+
+{
+    id: 30,
+    name: "Hollow Hold",
+    image: "🥚",
+    sets: 3,
+    reps: "30 sec",
+    rest: 45,
+    muscle: "Core",
+    difficulty: "Gemiddeld",
+    calories: 14,
+    description: "Houd je onderrug tegen de grond terwijl armen en benen van de vloer blijven."
+},
 ];
