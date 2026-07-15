@@ -4,6 +4,7 @@ function startWorkout() {
     updateTrainingCounter();
 
     currentExercise = 0;
+    currentWorkout = generateWorkout("express");
 
     
 showCurrentExercise();
@@ -15,12 +16,12 @@ function showCurrentExercise() {
 
     const hero = document.querySelector(".hero");
 
-    const oefening = exercises[currentExercise];
+    const oefening = getCurrentExercise();
 
     hero.innerHTML = `
 
 <p class="small">
-Oefening ${currentExercise+1} van ${exercises.length}
+Oefening ${currentExercise+1} van ${currentWorkout.length}
 </p>
 
 <div class="exercise-image">
