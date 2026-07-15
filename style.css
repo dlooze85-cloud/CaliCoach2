@@ -360,3 +360,15 @@ font-size:.9rem;
 color:#9ca3af;
 
 }
+#timer{
+    font-size:72px;
+    font-weight:700;
+    margin:15px 0;
+    text-align:center;
+}
+
+.hero h3{
+    margin-top:20px;
+    opacity:.8;
+    text-align:center;
+}
