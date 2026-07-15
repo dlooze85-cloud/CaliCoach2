@@ -129,7 +129,9 @@ hero.innerHTML=`
 <p>🏋️ ${volgende.sets} sets × ${volgende.reps}</p>
 
 <p>💪 ${volgende.muscle}</p>
-
+<p class="exercise-description">
+${volgende.description}
+</p>
 <br>
 
 <button onclick="skipRest()">
