@@ -27,6 +27,17 @@ function resetWorkout(){
 
 }
 function generateWorkout(type){
+    if(type === "full"){
+    return [...exercises]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 12);
+}
+
+if(type === "surprise"){
+    return [...exercises]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, Math.floor(Math.random() * 6) + 6);
+}
 
     if(type !== "express"){
         return exercises;
