@@ -15,17 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    if (typeof updateTrainingCounter === "function") {
-        updateTrainingCounter();
-    }
-    if (typeof getStreak === "function") {
-
-    const streak = document.getElementById("streakCount");
-
-    if (streak) {
-        streak.textContent = getStreak();
-    }
-
+    
+if (typeof updateTrainingCounter === "function") {
+    updateTrainingCounter();
 }
-
 });
