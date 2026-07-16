@@ -417,3 +417,32 @@ color:#9ca3af;
     transition:width .5s;
 
 }
+.hero button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    background:linear-gradient(90deg,#3ddc84,#6ef7a5);
+
+    color:#111;
+
+    transition:.25s;
+
+}
+
+.hero button:active{
+
+    transform:scale(.97);
+
+}
