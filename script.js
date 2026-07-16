@@ -23,8 +23,7 @@ function showCurrentExercise() {
 <p class="small">
 Oefening ${currentExercise+1} van ${currentWorkout.length}
 </p>
-Oefening ${currentExercise+1} van ${currentWorkout.length}
-</p>
+
 
 <div class="progress">
 
