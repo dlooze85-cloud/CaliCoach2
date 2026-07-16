@@ -1,3 +1,4 @@
+alert("script geladen");
 let currentExercise = 0;
 function startWorkout(type = "express") {
 
