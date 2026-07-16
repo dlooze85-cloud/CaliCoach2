@@ -105,7 +105,7 @@ function finishExercise(){
 
     currentExercise++;
 
-    if(currentExercise >= exercises.length){
+    if(currentExercise >= currentWorkout.length){
 
         finishWorkout();
 
