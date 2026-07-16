@@ -35,6 +35,8 @@ function updateTrainingCounter() {
 
 }
 function getStreak(){
+    return 7;
+}
 
     const laatste = localStorage.getItem("lastTraining");
 
