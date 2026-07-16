@@ -121,7 +121,7 @@ function startRest(){
 
     const hero = document.querySelector(".hero");
 
-    let seconden = exercises[currentExercise-1].rest;
+    let seconden = currentWorkout[currentExercise-1].rest;
 const volgende = getCurrentExercise();
     
 hero.innerHTML=`
