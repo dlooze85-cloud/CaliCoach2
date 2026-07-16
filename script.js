@@ -155,9 +155,6 @@ ${volgende.description}
 </button>
 <br>
 
-<button onclick="skipRest()">
-⏭ Rust overslaan
-</button>
 
     `;
 
