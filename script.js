@@ -1,10 +1,10 @@
-function startWorkout() {
+function startWorkout(type = "express") {
 
     saveTraining();
     updateTrainingCounter();
 
     currentExercise = 0;
-    currentWorkout = generateWorkout("express");
+    currentWorkout = generateWorkout(type);
 
     
 showCurrentExercise();
@@ -202,6 +202,4 @@ function skipRest(){
     showCurrentExercise();
 
 }
-document
-.getElementById("startButton")
-.addEventListener("click", startWorkout);
+
