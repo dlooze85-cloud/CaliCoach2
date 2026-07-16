@@ -446,3 +446,14 @@ color:#9ca3af;
     transform:scale(.97);
 
 }
+.info-card{
+
+    transition:.25s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-4px);
+
+}
