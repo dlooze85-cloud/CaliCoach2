@@ -32,6 +32,9 @@ style="width:${((currentExercise+1)/currentWorkout.length)*100}%">
 </div>
 
 </div>
+<p class="small">
+Nog ${currentWorkout.length-currentExercise-1} oefening(en) te gaan
+</p>
 
 <div class="exercise-image">
 
