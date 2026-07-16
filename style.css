@@ -47,6 +47,7 @@ box-shadow:0 10px 30px rgba(37,99,235,.4);
 }
 
 .hero{
+    min-height: 100vh;
     margin-bottom:30px;
     padding:32px;
     border-radius:28px;
