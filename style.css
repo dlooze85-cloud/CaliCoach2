@@ -458,3 +458,47 @@ color:#9ca3af;
     transform:translateY(-4px);
 
 }
+.workout-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-top:25px;
+}
+
+.workout-buttons button{
+
+    text-align:left;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#1b2430;
+
+    color:white;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.25s;
+
+}
+
+.workout-buttons button:active{
+
+    transform:scale(.98);
+
+}
+
+.workout-buttons span{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#9fb3c8;
+
+    font-size:14px;
+
+}
