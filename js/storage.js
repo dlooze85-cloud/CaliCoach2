@@ -28,6 +28,20 @@ function updateTrainingCounter() {
 
     const teller = document.getElementById("trainingCount");
 
+    if (teller) {
+        teller.textContent = getTrainingen();
+    }
+
+    const streak = document.getElementById("streakCount");
+
+    if (streak) {
+        streak.textContent = getStreak();
+    }
+
+}
+
+    const teller = document.getElementById("trainingCount");
+
     if (!teller)
         return;
 
