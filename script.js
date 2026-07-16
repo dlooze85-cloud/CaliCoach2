@@ -1,3 +1,4 @@
+let currentExercise = 0;
 function startWorkout(type = "express") {
 
     saveTraining();
