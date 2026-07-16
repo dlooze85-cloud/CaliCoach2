@@ -1,6 +1,7 @@
 function saveTraining() {
 
     let trainingen = localStorage.getItem("trainingen");
+    localStorage.setItem("lastTraining", new Date().toDateString());
 
     if (trainingen === null) {
         trainingen = 0;
@@ -31,5 +32,16 @@ function updateTrainingCounter() {
         return;
 
     teller.textContent = getTrainingen();
+
+}
+function getStreak(){
+
+    const laatste = localStorage.getItem("lastTraining");
+
+    if(!laatste){
+        return 0;
+    }
+
+    return 1;
 
 }
