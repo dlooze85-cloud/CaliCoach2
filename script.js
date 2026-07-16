@@ -21,8 +21,17 @@ function showCurrentExercise() {
     hero.innerHTML = `
 
 <p class="small">
+<p class="small">
 Oefening ${currentExercise+1} van ${currentWorkout.length}
 </p>
+
+<div class="progress">
+
+<div class="progress-fill"
+style="width:${((currentExercise+1)/currentWorkout.length)*100}%">
+</div>
+
+</div>
 
 <div class="exercise-image">
 
