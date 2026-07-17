@@ -1,3 +1,4 @@
+alert("workout geladen");
 let currentExercise = 0;
 let currentWorkout = [];
 
