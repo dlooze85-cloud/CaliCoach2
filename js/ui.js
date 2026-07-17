@@ -1,4 +1,4 @@
-
+alert("ui geladen");
 document.addEventListener("DOMContentLoaded", () => {
 
     const hello = document.querySelector(".hello");
