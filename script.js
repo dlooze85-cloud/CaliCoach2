@@ -179,21 +179,55 @@ ${volgende.description}
 
 }
 
-function finishWorkout(){
+function finishWorkout() {
 
-    const hero=document.querySelector(".hero");
+    const hero = document.querySelector(".hero");
 
-    hero.innerHTML=`
+    let totaalCalorieen = 0;
 
-        <h2>🎉 Training voltooid!</h2>
+    currentWorkout.forEach(oefening => {
+        totaalCalorieen += oefening.calories;
+    });
 
-        <p>Top gedaan!</p>
+    hero.innerHTML = `
 
-        <br>
+    <div class="finish-screen">
+
+        <div class="finish-icon">🏆</div>
+
+        <h2>Training voltooid!</h2>
+
+        <p class="finish-text">
+        Fantastisch gedaan! Je bent weer een stap sterker geworden.
+        </p>
+
+        <div class="finish-stats">
+
+            <div class="finish-card">
+                💪
+                <strong>${currentWorkout.length}</strong>
+                <span>Oefeningen</span>
+            </div>
+
+            <div class="finish-card">
+                🔥
+                <strong>${totaalCalorieen}</strong>
+                <span>kcal</span>
+            </div>
+
+            <div class="finish-card">
+                ⏱
+                <strong>${currentWorkout.length * 3}</strong>
+                <span>Minuten</span>
+            </div>
+
+        </div>
 
         <button onclick="location.reload()">
-        Terug naar Home
+            🔄 Nieuwe training
         </button>
+
+    </div>
 
     `;
 
