@@ -24,6 +24,7 @@ function getTrainingen() {
     return Number(trainingen);
 
 }
+
 function updateTrainingCounter() {
 
     const teller = document.getElementById("trainingCount");
@@ -40,21 +41,11 @@ function updateTrainingCounter() {
 
 }
 
-    const teller = document.getElementById("trainingCount");
-
-    if (!teller)
-        return;
-
-    teller.textContent = getTrainingen();
-
-}
-function getStreak(){
-    return 7;
-}
+function getStreak() {
 
     const laatste = localStorage.getItem("lastTraining");
 
-    if(!laatste){
+    if (!laatste) {
         return 0;
     }
 
