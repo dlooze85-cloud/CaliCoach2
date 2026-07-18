@@ -26,7 +26,7 @@ function renderAchievements(){
 
     const trainingen = getTrainingen();
 
-    let html = "<h2>🏆 Achievements</h2>";
+    let html = "";
 
     achievements.forEach(a=>{
 
