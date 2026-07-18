@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const hello = document.querySelector(".hello");
@@ -15,8 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    
-if (typeof updateTrainingCounter === "function") {
-    updateTrainingCounter();
-}
+    if (typeof updateTrainingCounter === "function") {
+        updateTrainingCounter();
+    }
+
+    if (typeof renderAchievements === "function") {
+        renderAchievements();
+    }
+
 });
