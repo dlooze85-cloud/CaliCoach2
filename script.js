@@ -178,7 +178,27 @@ ${volgende.description}
     },1000);
 
 }
+function getMotivation(){
 
+    const quotes = [
+
+        "🔥 Consistentie verslaat perfectie.",
+
+        "💪 Iedere training maakt je sterker.",
+
+        "🚀 Kleine stappen. Grote resultaten.",
+
+        "🏆 Discipline wint altijd van motivatie.",
+
+        "⚡ Je toekomstige zelf zal je bedanken.",
+
+        "🔥 Vandaag gewonnen. Morgen nog sterker."
+
+    ];
+
+    return quotes[Math.floor(Math.random()*quotes.length)];
+
+}
 function finishWorkout() {
 
     const hero = document.querySelector(".hero");
@@ -198,8 +218,8 @@ function finishWorkout() {
         <h2>Training voltooid!</h2>
 
         <p class="finish-text">
-        Fantastisch gedaan! Je bent weer een stap sterker geworden.
-        </p>
+${getMotivation()}
+</p>
 
         <div class="finish-stats">
 
