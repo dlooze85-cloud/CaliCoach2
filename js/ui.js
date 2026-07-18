@@ -18,8 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
         updateTrainingCounter();
     }
 
-    if (typeof renderAchievements === "function") {
-        renderAchievements();
-    }
 
 });
