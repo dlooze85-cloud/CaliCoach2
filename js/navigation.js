@@ -1,9 +1,31 @@
-function showScreen(screen){
+function showScreen(screenId) {
 
-    document.getElementById("homeScreen").style.display="none";
-    document.getElementById("statsScreen").style.display="none";
-    document.getElementById("profileScreen").style.display="none";
+    const screens = document.querySelectorAll(".screen");
 
-    document.getElementById(screen).style.display="block";
+    screens.forEach(screen => {
+        screen.style.display = "none";
+    });
+
+    document.getElementById(screenId).style.display = "block";
+
+    document.querySelectorAll("nav button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    if (screenId === "homeScreen") {
+        document.getElementById("navHome").classList.add("active");
+    }
+
+    if (screenId === "workoutScreen") {
+        document.getElementById("navWorkout").classList.add("active");
+    }
+
+    if (screenId === "statsScreen") {
+        document.getElementById("navStats").classList.add("active");
+    }
+
+    if (screenId === "profileScreen") {
+        document.getElementById("navProfile").classList.add("active");
+    }
 
 }
