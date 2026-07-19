@@ -18,7 +18,7 @@
 <body>
 
 <div class="app">
-<div id="homeScreen">
+<div id="homeScreen" class="screen">
 
 <header class="top">
 
@@ -198,15 +198,48 @@ Statistieken
 </section>
 </div>
 
-<div id="statsScreen" style="display:none;">
+<div id="statsScreen" class="screen" style="display:none;">
 
 <h2>📈 Statistieken</h2>
 
 <p>Hier komen straks je statistieken.</p>
 
 </div>
+  <div id="workoutScreen" class="screen" style="display:none;">
 
-<div id="profileScreen" style="display:none;">
+<h2>💪 Workouts</h2>
+
+<div class="workout-buttons">
+
+<button onclick="startWorkout('express')">
+
+⚡ Express Workout
+
+<span>10-15 minuten</span>
+
+</button>
+
+<button onclick="startWorkout('full')">
+
+💪 Full Body
+
+<span>25-35 minuten</span>
+
+</button>
+
+<button onclick="startWorkout('surprise')">
+
+🎲 Verras mij
+
+<span>Willekeurige training</span>
+
+</button>
+
+</div>
+
+</div>
+
+<div id="profileScreen" class="screen" style="display:none;">
 
 <h2>👤 Profiel</h2>
 
@@ -216,20 +249,32 @@ Statistieken
 
 <nav>
 
-<button onclick="showScreen('homeScreen')">
+<button id="navHome"
+onclick="showScreen('homeScreen')">
+
 🏠
+
 </button>
 
-<button>
+<button id="navWorkout"
+onclick="showScreen('workoutScreen')">
+
 💪
+
 </button>
 
-<button onclick="showScreen('statsScreen')">
+<button id="navStats"
+onclick="showScreen('statsScreen')">
+
 📈
+
 </button>
 
-<button onclick="showScreen('profileScreen')">
+<button id="navProfile"
+onclick="showScreen('profileScreen')">
+
 👤
+
 </button>
 
 </nav>
