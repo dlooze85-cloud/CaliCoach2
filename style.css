@@ -555,3 +555,77 @@ color:#9ca3af;
     }
 
 }
+/* ---------- Bottom Navigation ---------- */
+
+nav{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    padding:14px 0;
+
+    background:#181818;
+
+    border-top:1px solid #2a2a2a;
+
+    z-index:999;
+}
+
+nav button{
+
+    background:none;
+    border:none;
+
+    color:#888;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    transform:translateY(0);
+
+}
+
+nav button.active{
+
+    color:#35d07f;
+
+    transform:translateY(-6px) scale(1.15);
+
+}
+
+.screen{
+
+    animation:fadeScreen .35s;
+
+}
+
+@keyframes fadeScreen{
+
+from{
+
+opacity:0;
+transform:translateY(10px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+}
+
+.app{
+
+padding-bottom:90px;
+
+}
