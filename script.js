@@ -181,11 +181,17 @@ ${volgende.description}
 
         if(seconden<=0){
 
-            clearInterval(interval);
+    clearInterval(interval);
 
-            showCurrentExercise();
+    if(navigator.vibrate){
 
-        }
+        navigator.vibrate([200,100,200]);
+
+    }
+
+    showCurrentExercise();
+
+}
 
     },1000);
 
@@ -255,9 +261,9 @@ ${getMotivation()}
 
         </div>
 
-        <button onclick="location.reload()">
-            🔄 Nieuwe training
-        </button>
+        <button onclick="showScreen('homeScreen'); location.reload();">
+    🚀 Start nieuwe training
+</button>
 
     </div>
 
