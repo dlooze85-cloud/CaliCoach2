@@ -985,3 +985,30 @@ grid-template-columns:1fr 1fr;
 #workoutScreen button {
     pointer-events: auto;
 }
+.hero{
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+
+}
+
+button{
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
