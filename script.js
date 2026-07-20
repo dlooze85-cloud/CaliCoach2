@@ -104,17 +104,29 @@ Oefening voltooid
 }
 function finishExercise(){
 
-    currentExercise++;
+    const hero = document.querySelector(".hero");
 
-    if(currentExercise >= currentWorkout.length){
+    hero.style.transition = "all .35s ease";
+    hero.style.transform = "scale(.96)";
+    hero.style.opacity = ".35";
 
-        finishWorkout();
+    setTimeout(()=>{
 
-        return;
+        hero.style.transform = "scale(1)";
+        hero.style.opacity = "1";
 
-    }
+        currentExercise++;
 
-    startRest();
+        if(currentExercise >= currentWorkout.length){
+
+            finishWorkout();
+            return;
+
+        }
+
+        startRest();
+
+    },350);
 
 }
 
